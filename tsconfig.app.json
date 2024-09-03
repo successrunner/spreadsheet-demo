@@ -18,7 +18,15 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    // Set the base URL for module resolution
+    "baseUrl": ".",
+    // Define path aliases for easier imports
+    "paths": {
+      // Map '@/*' to the 'src' directory
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["src"]
 }
